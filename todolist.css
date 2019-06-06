@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #b1b1b1;
+}
+header form{
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header form [type=text],[type=submit]{
+    padding: 0 10px;
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    outline: none;
+    border: 1px solid #cccccc;
+}
+header form [type=submit]{
+    width: 50px;
+}
+main{
+    width: 900px;
+    height: 60px;
+    margin: 10px auto;
+}
+main nav ul{
+    width: 900px;
+    height: 60px;
+    display: flex;
+    position: relative;
+}
+main nav ul li{
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    transition: all ease 0.5s;
+}
+main li.hot{
+    color: #ffffff;
+}
+main li.hot:nth-child(1) ~ .top{
+    transform: translate(0,0);
+}
+main li.hot:nth-child(2) ~ .top{
+    transform: translate(100%,0);
+}
+main li.hot:nth-child(3) ~ .top{
+    transform: translate(200%,0);
+}
+main .top{
+    width: 300px;
+    height: 60px;
+    background: #4ebbfe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 0.5s;
+    z-index: -1;
+}
+main .content{
+    padding: 0 15px;
+    border: 1px solid darkgray;
+}
+main .content li{
+    font-size: 20px;
+    line-height: 3;
+    border-bottom: 1px solid #b1b1b1;
+}
+main .content li p{
+    display: inline-block;
+}
+main .content li time{
+    float: right;
+}
+main .content li del{
+    float: right;
+    margin-left: 15px;
+    text-decoration: none;
+}
