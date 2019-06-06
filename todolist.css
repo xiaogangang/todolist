@@ -69,10 +69,12 @@ main .top{
     left: 0;
     transition: all ease 0.5s;
     z-index: -1;
+    border-radius: 5px;
 }
 main .content{
-    padding: 0 15px;
+    padding: 10px 15px;
     border: 1px solid darkgray;
+    border-radius: 5px;
 }
 main .content li{
     font-size: 20px;
